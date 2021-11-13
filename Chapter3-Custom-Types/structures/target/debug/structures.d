@@ -1,1 +1,0 @@
-/Users/lilychen/Projects/rust-sandbox/rust-by-example/Chapter3-Custom-Types/structures/target/debug/structures: /Users/lilychen/Projects/rust-sandbox/rust-by-example/Chapter3-Custom-Types/structures/src/main.rs
