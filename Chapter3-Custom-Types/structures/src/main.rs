@@ -44,11 +44,20 @@ impl fmt::Display for Rectangle {
 
 // Calculate the area of a given Rectangle
 fn rect_area (rect: &Rectangle) -> f32 {
+    let Rectangle {
+        top_left: Point { x: left_edge, y: top_edge },
+        bottom_right: Point { x: right_edge, y: bottom_edge}
+    } = rect;
+
+    (top_edge - bottom_edge) * (right_edge - left_edge)
+}
+/*
+fn rect_area (rect: &Rectangle) -> f32 {
     let width: f32 = rect.top_left.y - rect.bottom_right.y;
     let height: f32 = rect.bottom_right.x - rect.top_left.x;
     width * height
 }
-
+*/
 fn generate_square (bottom_left: &Point, height: f32) -> Rectangle {
     let top_left = Point { x: bottom_left.x, y: bottom_left.y + height };
     let bottom_right = Point { x: bottom_left.x + height, y: bottom_left.y };
