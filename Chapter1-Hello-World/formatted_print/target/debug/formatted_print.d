@@ -1,0 +1,1 @@
+/Users/lilychen/Projects/rust-sandbox/rust-by-example/Chapter1-Hello-World/formatted_print/target/debug/formatted_print: /Users/lilychen/Projects/rust-sandbox/rust-by-example/Chapter1-Hello-World/formatted_print/src/main.rs
