@@ -31,8 +31,6 @@ struct Color {
 impl Display for Color {
     fn fmt(&self, f: &mut Formatter) -> fmt::Result {
         let hex_rep : u32 = (u32::from(self.red) << 16) + (u32::from(self.green) << 8) + u32::from(self.blue);
-        //let vec = [0u8, self.red, self.green, self.blue];
-        //let hex_rep = vec as u32;
         write!(f, "RGB ({}, {}, {}) {:#08X}",
             self.red, self.green, self.blue, hex_rep)
     }
